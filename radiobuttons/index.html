@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keuzestress</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card card-wide">
+    <header class="card-header">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">`r`n        <circle cx="32" cy="32" r="20" fill="#e63946"></circle>`r`n      </svg>
+      <h1>Keuzestress</h1>
+    </header>
+
+    <form>
+      <p>Maak een keuze.</p>
+
+      <fieldset>
+        <legend>Favoriete programmeertaal</legend>
+        <label><input type="radio" name="programmeertaal" value="csharp" checked> C#</label>
+        <label><input type="radio" name="programmeertaal" value="javascript"> JavaScript</label>
+        <label><input type="radio" name="programmeertaal" value="typescript"> TypeScript</label>
+        <label><input type="radio" name="programmeertaal" value="php"> PHP</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Favoriete IDE</legend>
+        <label><input type="radio" name="ide" value="vscode" checked> Visual Studio Code</label>
+        <label><input type="radio" name="ide" value="webstorm"> WebStorm</label>
+        <label><input type="radio" name="ide" value="vim"> Vim</label>
+        <label><input type="radio" name="ide" value="phpstorm"> PHPStorm</label>
+      </fieldset>
+
+      <button type="submit">bevestig je keuze</button>
+    </form>
+  </main>
+</body>
+</html>
+
+

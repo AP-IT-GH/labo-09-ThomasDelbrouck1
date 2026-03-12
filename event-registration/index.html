@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conferentie Registratie</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card-header">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">`r`n        <circle cx="32" cy="32" r="20" fill="#e63946"></circle>`r`n      </svg>
+      <h1>Conferentie Registratie</h1>
+    </header>
+
+    <form>
+      <section>
+        <h2>Persoonlijke Gegevens</h2>
+        <div class="form-row">
+          <div class="field required-field">
+            <label for="full-name">Volledige naam</label>
+            <input type="text" id="full-name" name="full-name" required>
+          </div>
+          <div class="field required-field">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="field required-field">
+          <label for="password">Wachtwoord</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+      </section>
+
+      <section>
+        <h2>Registratie Details</h2>
+        <div class="field required-field">
+          <label for="attendance-date">Datum van deelname</label>
+          <input type="date" id="attendance-date" name="attendance-date" required>
+        </div>
+
+        <fieldset>
+          <legend>Ticket type</legend>
+          <label><input type="radio" name="ticket-type" value="early-bird" checked> Early Bird</label>
+          <label><input type="radio" name="ticket-type" value="regular"> Regular</label>
+          <label><input type="radio" name="ticket-type" value="vip"> VIP</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Workshops</legend>
+          <label><input type="checkbox" name="workshops" value="web-design"> Web Design</label>
+          <label><input type="checkbox" name="workshops" value="backend"> Backend</label>
+          <label><input type="checkbox" name="workshops" value="devops"> DevOps</label>
+        </fieldset>
+      </section>
+
+      <section>
+        <h2>Extra Info</h2>
+        <div class="field">
+          <label for="profile-photo">Profielfoto</label>
+          <input type="file" id="profile-photo" name="profile-photo">
+        </div>
+        <div class="field">
+          <label for="comments">Extra opmerkingen</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <div class="field consent required-field consent-row">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">Akkoord gaan met de voorwaarden</label>
+        </div>
+      </section>
+
+      <button type="submit">Registreren</button>
+    </form>
+  </main>
+</body>
+</html>
+
+
